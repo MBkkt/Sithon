@@ -18,7 +18,7 @@ void TestEmptyProgram() {
     std::ostringstream output;
     RunProgram(input, output);
 
-    ASSERT_EQUAL(output.str(), "")
+    ASSERT_EQUAL(output.str(), "");
 }
 
 
@@ -36,7 +36,7 @@ print None
     std::ostringstream output;
     RunProgram(input, output);
 
-    ASSERT_EQUAL(output.str(), "57\n10 24 -8\nhello\nworld\nTrue False\n\nNone\n")
+    ASSERT_EQUAL(output.str(), "57\n10 24 -8\nhello\nworld\nTrue False\n\nNone\n");
 }
 
 
@@ -58,7 +58,7 @@ print str((x + xx) / _xxx) + str(x4) + str(x_5 + 1) + str_ + str_2 + str_3
     std::ostringstream output;
     RunProgram(input, output);
 
-    ASSERT_EQUAL(output.str(), "146stringstringstring\n")
+    ASSERT_EQUAL(output.str(), "146stringstringstring\n");
 }
 
 
@@ -75,7 +75,7 @@ print string2
     RunProgram(input, output);
 
     ASSERT_EQUAL(output.str(), "Here is \"test string\" with inner \"double\"\"quotes\"\n"
-                               "Here is another 'test string' with inner 'single''quotes'\n")
+                               "Here is another 'test string' with inner 'single''quotes'\n");
 }
 
 
@@ -96,7 +96,7 @@ print x.calc(2), x.calc(-3), x.calc(0)
     std::ostringstream output;
     RunProgram(input, output);
 
-    ASSERT_EQUAL(output.str(), "2 3 0\n")
+    ASSERT_EQUAL(output.str(), "2 3 0\n");
 }
 
 
@@ -160,11 +160,11 @@ print result1, result2, result3, result4, result5, result6, result7, result8, re
     std::ostringstream output;
     RunProgram(input, output);
 
-    ASSERT_EQUAL(output.str(), "False True True False True False False False True False True True True\n")
+    ASSERT_EQUAL(output.str(), "False True True False True False False False True False True True True\n");
 }
 
 
-void RunComplexTests(TestRunner& tr) {
+void RunComplexTests(TestRunner &tr) {
     RUN_TEST(tr, TestEmptyProgram);
     RUN_TEST(tr, TestPrinting);
     RUN_TEST(tr, TestStrFunction);

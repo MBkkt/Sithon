@@ -1,13 +1,15 @@
 #pragma once
+
 #include <memory>
 #include <stdexcept>
 
+
 namespace Ast {
-    class Statement;
+class Statement;
 }
 
 namespace Parse {
-    class Lexer;
+class Lexer;
 }
 
 class TestRunner;
